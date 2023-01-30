@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(images/dan-farrell-fT49QnFucQ8-unsplash.jpg);
+        background-position: center;
+        background-size: cover; 
+        position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+width: 150px;
+}
+.nav-links{
+flex: 1;
+text-align: right;
+}
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+font-weight: bolder;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; 
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c4e96f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: aliceblue;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .text-box h1{
+    font-size: 50px;
+    position:absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;  
+    }
+    @keyframes backcolor{
+        100%{
+            background-position:0 0;
+        }
+    }
+    .text-box p{
+    margin: 10px 0 10px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    }
+    .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: rgb(50, 107, 135);
+    height: 20px;
+
+    cursor: pointer;
+    }
+
+.hero-btn:hover{
+border:1px solid rgb(255, 228, 95);
+background: rgb(255, 88, 50);
+transition: 1s;
+}
+@media(max-width: 700px) {
+text-box h1{
+
+font-size: 20px;
+}
+.nav-links ul li{
+
+display: block;
+}
+.nav-links{
+position: absolute;
+background: #f44336;
+height: 100vh;
+width: 200px;
+top: 0;
+right: 0;
+}
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        background: #f6c727;
+        height:100vh;
+        width: 200px;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h2{
+    font-size: 36px;
+    font-weight:800;
+    color:rgb(161, 91, 37);
+    font-family:modern no. 20;
+    background-color: #FCE9DC ;
+    margin-left: -150px;  
+}   
+p{
+    color:rgba(0, 0, 0, 0.943);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}    
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.course-col{
+    flex-basis: 31%;
+    background: #cf8567;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: cursive;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgb(85, 46, 4);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.work{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 200px;
+}
+.footer{
+    margin-top: 150px;
+    width: 98%;
+    padding: 100px 1%;
+    background: #333;
+    color:#efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-1{
+    flex-grow: 2;
+}
+.col-2{
+    flex-grow: 3;
+}
+.footer div h4{
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+.col-1 a{
+    display: block;
+    /* text-decoration: none; */
+    color: #fff;
+    margin-bottom: 10px;
+}
+form input{
+    width: 350px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;    
+}
+form button{
+    background: transparent;
+    border: 2px solid white;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
